@@ -1,0 +1,416 @@
+url: 
+https://www.federacionchilenadeajedrez.cl/torneos/
+https://www.federacionchilenadeajedrez.cl/torneos_contabilizados/
+
+
+QUERY 
+{
+    "data": {
+        "tournaments": [
+            {
+                "id": "2615",
+                "title": "3\u00b0 Fecha Circuito Lichess ENROQUE OSORNINO",
+                "city": "Osorno",
+                "start_date": "21/01/2026",
+                "address": "Lichess.org",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2723",
+                "title": "\ud83d\udc07 CLUB DE AJEDREZ CONCEPCI\u00d3N TORNEO R\u00c1PIDO A BENEFICIO\ud83d\udc07",
+                "city": "Concepci\u00f3n",
+                "start_date": "23/01/2026",
+                "address": "Janequeo #409",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2704",
+                "title": "ACADEMIA AJEDREZ VINA DEL MAR - Torneo Abierto 30+30",
+                "city": "Vi\u00f1a del Mar",
+                "start_date": "23/01/2026",
+                "address": "Pasaje San Luis 1041",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2722",
+                "title": "51ro Torneo VIERNES 23-01-2026  Club de Ajedrez Aviador Acevedo Lota",
+                "city": "Lota",
+                "start_date": "23/01/2026",
+                "address": "Squella 298",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2585",
+                "title": "SUSPENDIDO ABIERTO DE AJEDREZ BERNA CARRASCO ARAYA 650 MIL  A REPARTIR",
+                "city": "SANTIAGO, SUSPENDIDO",
+                "start_date": "24/01/2026",
+                "address": "El Canelo de Nos, Avda Portales #3020 San Bernardo",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2679",
+                "title": "\u00d1U\u00d1OA: Torneo Lanzamiento Club de Ajedrez Plaza \u00d1u\u00f1oa 2026",
+                "city": "\u00d1U\u00d1OA, Santiago",
+                "start_date": "24/01/2026",
+                "address": "Plaza de las Artes \u201cPianista Valent\u00edn Trujillo\u201d",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2278",
+                "title": "TORNEO AJEDREZ LAUTARO MEJORANDO CALIDAD DE VIDA  GAMBITO DE TOQUI Pueden participar con o sin club",
+                "city": "LAUTARO",
+                "start_date": "24/01/2026",
+                "address": "Centro Cultural (Calle Matta Esq Bilbao) (Pueden participar jugadores con o sin club afiliado)",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2587",
+                "title": "\u265f 7MO TORNEO OPEN DOBLE VINA DEL MAR \u265f",
+                "city": "VINA DEL MAR",
+                "start_date": "24/01/2026",
+                "address": "PALACIO RIOJA",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2623",
+                "title": "PROVIDENCIA: Torneo R\u00e1pido Gimnasio de la Mente 2026",
+                "city": "Providencia, Metro Santa Isabel (L5)",
+                "start_date": "24/01/2026",
+                "address": "V\u00edctor Hendrych 360",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2706",
+                "title": "Aniversario Enroque Canelino",
+                "city": "Canela",
+                "start_date": "24/01/2026",
+                "address": "Salon Cultural - Cura Hidalgo 345",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2647",
+                "title": "597\u00b0 TORNEO MALL FLORIDA CENTER",
+                "city": "La Florida",
+                "start_date": "24/01/2026",
+                "address": "Mall Florida Center - Tercer Piso Patio de Comidas ",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2702",
+                "title": "Torneo Open R\u00e1pido LA CLETA & MAPUCHESS CLUB (Elo Nacional)",
+                "city": "La Florida, Santiago",
+                "start_date": "24/01/2026",
+                "address": " Rojas Magallanes 3951, La Florida, Santiago",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2692",
+                "title": "IRT SUB 1800 30+30 COPA ANCUD 2026",
+                "city": "Ancud",
+                "start_date": "24/01/2026",
+                "address": "Escuela Anexa, Almirante Latorre 620",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2718",
+                "title": "108\u00ba Torneo Plaza de Maip\u00fa",
+                "city": "Santiago",
+                "start_date": "25/01/2026",
+                "address": ": Plaza de Maip\u00fa, 5 de Abril con Alberto Llona ",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2666",
+                "title": "Tercer Torneo Estibadores Valpara\u00edso",
+                "city": "Valpara\u00edso",
+                "start_date": "25/01/2026",
+                "address": "Almirante Go\u00f1i 49 con blanco",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2713",
+                "title": "\ud83c\udfc6Torneo de Ajedrez Puente Alto, \u201cOpen y sub 1200 ENF\u201d",
+                "city": "Santiago, Puente Alto",
+                "start_date": "25/01/2026",
+                "address": "Sargento Menadier # 575",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2649",
+                "title": "PRIMER TORNEO DE AJEDREZ VERANO COBQUECURA 2026",
+                "city": "COBQUECURA",
+                "start_date": "25/01/2026",
+                "address": "PLAZA COMUNA COBQUECURA",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2689",
+                "title": "Torneo de Entrenamiento a Nacional de Menores Los Angeles 2026",
+                "city": "LOS ANGELES",
+                "start_date": "25/01/2026",
+                "address": "Lautaro 463",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2717",
+                "title": "28\u00b0 R\u00c1PIDO CORDILLERANO",
+                "city": "LAS CONDES",
+                "start_date": "25/01/2026",
+                "address": "Camino el alba 9500, oficina B017",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2442",
+                "title": "\ud83d\udc8e\ud83d\udcb8I CHESS OPEN SANTIAGO 2026 - CLUB DE AJEDREZ DE CHILE\ud83d\udcb8\ud83d\udc8e",
+                "city": "Santiago",
+                "start_date": "26/01/2026",
+                "address": "Serrano 14 - of 102 - Metro Universidad de Chile",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2714",
+                "title": "XV TORNEO BLITZ  CIRCULO CHILENO-CHECO",
+                "city": "Providencia",
+                "start_date": "27/01/2026",
+                "address": "Condell 456",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2716",
+                "title": "I BLITZ DE VERANO BARRIO LASTARRIA CIRCULO CHILENO-CHECO ",
+                "city": "Santiago",
+                "start_date": "28/01/2026",
+                "address": "Merced 328 Barrio Lastarria ",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2616",
+                "title": "4\u00b0 Fecha Circuito Lichess ENROQUE OSORNINO",
+                "city": "Osorno",
+                "start_date": "28/01/2026",
+                "address": "Lichess.org",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2669",
+                "title": "TALAGANTE: Torneo Final de Ajedrez R\u00c1PIDO 2025 (6 Rondas, 10+5)",
+                "city": "TALAGANTE (RM)",
+                "start_date": "31/01/2026",
+                "address": "Delegaci\u00f3n Provincial de Talagante",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2619",
+                "title": "III IRT Sub 1800 Verano en Valdivia",
+                "city": "Valdivia",
+                "start_date": "31/01/2026",
+                "address": "a confirmar",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2505",
+                "title": "LIGA ESCOLAR DE AJEDREZ VICTORIA 2025 SEGUNDA FECHA",
+                "city": "VICTORIA",
+                "start_date": "31/01/2026",
+                "address": "PARQUE ESTADIO VICTORIA",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2693",
+                "title": "Torneo de Ajedrez VERANO EN TOM\u00c9 2026",
+                "city": "Tom\u00e9",
+                "start_date": "31/01/2026",
+                "address": "Por confirmar",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2648",
+                "title": "598\u00b0 TORNEO MALL FLORIDA CENTER",
+                "city": "La Florida",
+                "start_date": "31/01/2026",
+                "address": "Mall Florida Center - Tercer Piso Patio de Comidas",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2674",
+                "title": "\u265f 8VO TORNEO OPEN DOBLE VINA DEL MAR \u265f",
+                "city": "VINA DEL MAR",
+                "start_date": "31/01/2026",
+                "address": "PALACIO RIOJA",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2707",
+                "title": "BARRIO REP\u00daBLICA: 7\u00b0 Torneo de Ajedrez Blitz 2026",
+                "city": "Barrio Rep\u00fablica, Santiago",
+                "start_date": "06/02/2026",
+                "address": "Explanada Plaza Manuel Rodriguez",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2715",
+                "title": "TORNEO SUB1600 RAPIDO 10+2 CIRCULO CHILENO-CHECO",
+                "city": "Santiago",
+                "start_date": "07/02/2026",
+                "address": "Avenida Portugal 28 Torre 4 Local 1A",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2654",
+                "title": "\u2728\u2728TERCER TORNEO DE AJEDREZ CAMPESTRE \u201cAUKANT\u00dcN WENY\u201d\u2728\u2728",
+                "city": "Calbuco",
+                "start_date": "14/02/2026",
+                "address": "Sector Chayahue",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2720",
+                "title": "TORNEO CHILENO FISCHER RANDOM 960 \u2013 FREESTYLE CHESS 2026",
+                "city": "Providencia, Santiago",
+                "start_date": "14/02/2026",
+                "address": "V\u00edctor Hendrych 360, Providencia, Santiago de Chile",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2697",
+                "title": "TORNEO DE VERANO IRT - COPA ACHAO 2026",
+                "city": "Ciudad Achao, provincia de Chilo\u00e9",
+                "start_date": "17/02/2026",
+                "address": "Liceo Bicentenario Insular, progreso 071",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2636",
+                "title": "\u201c IRT Sub 2400 Aniversario Puerto Montt 2026\"",
+                "city": "PUERTO MONTT",
+                "start_date": "21/02/2026",
+                "address": "Gobierno Regional de Los Lagos, Av. D\u00e9cima Regi\u00f3n 480, Puerto Montt.",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2662",
+                "title": "MEMORIAL DE AJEDREZ JUAN SALGADO \u2013 4\u00aa VERSI\u00d3N",
+                "city": "Serena",
+                "start_date": "22/02/2026",
+                "address": "Restobar Kocav\u00ed Bistr\u00f3 Avenida Balmaceda #1366",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2506",
+                "title": "LIGA ESCOLAR DE AJEDREZ VICTORIA 2025 TERCERA FECHA",
+                "city": "VICTORIA",
+                "start_date": "28/02/2026",
+                "address": "POR CONFIRMAR",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2507",
+                "title": "FINAL LIGA REGIONAL DE AJEDREZ VICTORIA 2025",
+                "city": "VICTORIA",
+                "start_date": "07/03/2026",
+                "address": "POR CONFIRMAR",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2708",
+                "title": "BARRIO REP\u00daBLICA: Torneo de Ajedrez R\u00e1pido \"Lleg\u00f3 Marzo\" 2026",
+                "city": "Barrio Rep\u00fablica, Santiago",
+                "start_date": "07/03/2026",
+                "address": "Explanada Plaza Manuel Rodriguez",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2596",
+                "title": "LAUTARO",
+                "city": "LAUTARO",
+                "start_date": "21/03/2026",
+                "address": "LAUTARO",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2681",
+                "title": "Regresamos al Deporte Ciencia",
+                "city": "Ovalle",
+                "start_date": "28/03/2026",
+                "address": "Hall I Municipalidad Ovalle Ariztia Poniente 7",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2680",
+                "title": "\ud83c\udfc61er Torneo por Equipos Copa Gambito Teresiano Vitacura 2026\ud83c\udfc6",
+                "city": "Santiago, Vitacura",
+                "start_date": "28/03/2026",
+                "address": "Av. Luis Pasteur 6700.",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2682",
+                "title": "Ajedrez Sin Hojas",
+                "city": "Ovalle",
+                "start_date": "25/04/2026",
+                "address": "Salon Motos Dabed - Maestranza 443",
+                "__typename": "TournamentType"
+            },
+            {
+                "id": "2597",
+                "title": "LAUTARO",
+                "city": "LAUTARO",
+                "start_date": "30/05/2026",
+                "address": "LAUTARO",
+                "__typename": "TournamentType"
+            }
+        ]
+    }
+}
+
+
+payload
+{variables: {word: ""},…}
+query
+: 
+"query ($word: String!) {\n  tournaments(word: $word) {\n    id\n    title\n    city\n    start_date: startDateFormated\n    address\n    __typename\n  }\n}"
+variables
+: 
+{word: ""}
+word
+: 
+""
+
+
+copy as a curl 
+curl ^"https://www.federacionchilenadeajedrez.cl/graphql^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: es-ES,es;q=0.9^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"content-type: application/json^" ^
+  -b ^"sessionid=o2w8th2v7ksjnd1lnzu5a52gehr5ldhu; csrftoken=NTnrFYBTvjMyihCc1eer0h2V67KRylQM^" ^
+  -H ^"origin: https://www.federacionchilenadeajedrez.cl^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://www.federacionchilenadeajedrez.cl/torneos/^" ^
+  -H ^"sec-ch-ua: ^\^"Not(A:Brand^\^";v=^\^"8^\^", ^\^"Chromium^\^";v=^\^"144^\^", ^\^"Google Chrome^\^";v=^\^"144^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: same-origin^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36^" ^
+  --data-raw ^"^{^\^"variables^\^":^{^\^"word^\^":^\^"^\^"^},^\^"query^\^":^\^"query (^$word: String^!) ^{^\^\n  tournaments(word: ^$word) ^{^\^\n    id^\^\n    title^\^\n    city^\^\n    start_date: startDateFormated^\^\n    address^\^\n    __typename^\^\n  ^}^\^\n^}^\^"^}^"
+
+  curl ^"https://www.federacionchilenadeajedrez.cl/graphql^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: es-ES,es;q=0.9^" ^
+  -H ^"cache-control: no-cache^" ^
+  -H ^"content-type: application/json^" ^
+  -H ^"origin: https://www.federacionchilenadeajedrez.cl^" ^
+  -H ^"pragma: no-cache^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://www.federacionchilenadeajedrez.cl/torneos/^" ^
+  -H ^"sec-ch-ua: ^\^"Not(A:Brand^\^";v=^\^"8^\^", ^\^"Chromium^\^";v=^\^"144^\^", ^\^"Google Chrome^\^";v=^\^"144^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: same-origin^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36^" ^
+  --data-raw ^"^{^\^"variables^\^":^{^\^"word^\^":^\^"^\^"^},^\^"query^\^":^\^"query (^$word: String^!) ^{^\^\n  tournaments(word: ^$word) ^{^\^\n    id^\^\n    title^\^\n    city^\^\n    start_date: startDateFormated^\^\n    address^\^\n    __typename^\^\n  ^}^\^\n^}^\^"^}^"
