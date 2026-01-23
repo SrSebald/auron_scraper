@@ -45,15 +45,18 @@ def fetch_tournaments(word=""):
 
     #3. Hacer el Post 
     response = requests.post(GRAPHQL_URL, headers=HEADERS, json=payload, timeout=10)
-    #4. Validar estatus }
+    #4. Validar estatus 
     if response.status_code != 200:
+        print(response.status_code)
+        print(response.text[:200])
         raise ValueError("Networking Error")
-    elif "errors" in data:
-        raise ValueError("Data Error")
-    elif response.status_code == 200: 
+    else:
         data = response.json()
-
+        if "errors" in data:
+            raise ValueError("Data error")
+        
     #5 JSON
+    tournaments = data["data"]["tournaments"]
 
     #6 Validar errores 
 
