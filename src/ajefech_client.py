@@ -1,11 +1,11 @@
  
-
+import requests 
 '''Definition of the url where we are going to take the data.'''
 GRAPHQL_URL = ("https://www.federacionchilenadeajedrez.cl/graphql")
 '''Definir los headers para pedir el formato en el que vamos a extraer la información. 
 el user agent es para una identificación de que estamos haciendo
 '''
-header = {'Content-Type': 'application/json',
+HEADERS = {'Content-Type': 'application/json',
 'User-Agent': 'AJEFECH-Tournament-Scraper/1.0 (contact email: werner.sebald.c@gmail.com)'}
 
 
@@ -35,14 +35,23 @@ def fetch_tournaments(word=""):
 
     
     #2. Construir el Payload 
+
+    #Listo
     payload = {
     "query": query,
     "variables" : variables
     }
 
-    #3. Hacer el Post 
 
-    #4. Validar estatus 
+    #3. Hacer el Post 
+    response = requests.post(GRAPHQL_URL, headers=HEADERS, json=payload, timeout=10)
+    #4. Validar estatus }
+    if response.status_code != 200:
+        raise ValueError("Networking Error")
+    elif "errors" in data:
+        raise ValueError("Data Error")
+    elif response.status_code == 200: 
+        data = response.json()
 
     #5 JSON
 
