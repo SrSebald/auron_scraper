@@ -2,6 +2,7 @@
 import requests 
 import unicodedata
 from datetime import datetime
+import csv
 
 
 
