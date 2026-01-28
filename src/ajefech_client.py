@@ -3,6 +3,8 @@ import requests
 import unicodedata
 from datetime import datetime
 
+
+
 '''Definition of the url where we are going to take the data.'''
 GRAPHQL_URL = ("https://www.federacionchilenadeajedrez.cl/graphql")
 '''Definir los headers para pedir el formato en el que vamos a extraer la información. 
@@ -147,11 +149,34 @@ def normalize_tournament(t: dict):
 
     #Control que no se haya suspendido
     SUSPEND_KEYWORDS= ["cancelado", "suspendido","suspend", "cancel"]
-    is_suspend = any(k in title_n for k in SUSPEND_KEYWORDS) or any(j in city_n for j in SUSPEND_KEYWORDS )
-    base["is_suspend"] = is_suspend
-
-
-
+    is_suspended = any(k in title_n for k in SUSPEND_KEYWORDS) or any(j in city_n for j in SUSPEND_KEYWORDS )
+    base["is_suspended"] = is_suspended
     #retrornar los valores normalizados.
     return  base  
 
+
+tournaments = fetch_tournaments()
+
+norm_list = [normalize_tournament(t) for t in tournaments]
+
+#Función de prueba
+def prueba_1(list):
+    print(type(norm_list))
+    print(type(norm_list[0]))
+    return len(list)
+
+
+#General el filtro de Santiago
+def filter_santiago_presencial (norm_list):
+    
+    filtered = []
+
+    for t in norm_list: 
+        ok = all([t["start_date_obj"] is not None, t["is_santiago"] , not t["is_online"] , not t["is_suspended"] ])
+        if ok == True: 
+            filtered.append(t)
+            
+
+    filtered_sorted =  sorted(filtered, key=lambda t: t["start_date_obj"])
+
+    return filtered_sorted

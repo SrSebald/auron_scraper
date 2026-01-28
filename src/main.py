@@ -1,6 +1,8 @@
 from ajefech_client import fetch_tournaments
 from ajefech_client import normalize_tournament
 from ajefech_client import normalize_text
+from ajefech_client import prueba_1
+from ajefech_client import filter_santiago_presencial
 
 if __name__ == "__main__":
 
@@ -41,10 +43,12 @@ if __name__ == "__main__":
     from ajefech_client import fetch_tournaments, normalize_tournament
     """
 
+    
     tournaments = fetch_tournaments()
     # ✅ 1) Crear norm_list (lista normalizada)
     norm_list = [normalize_tournament(t) for t in tournaments]
 
+    """
     # ✅ 2) Imprimir lo pedido
     print(type(norm_list))
     print(len(norm_list))
@@ -56,6 +60,15 @@ if __name__ == "__main__":
     for t in online[:3]:
         print(t["title"], "|", t["address"])
 
+    print(prueba_1(norm_list))
+    """
+
+    filtered_sorted = filter_santiago_presencial(norm_list)
+
+    print(len(filtered_sorted))
+
+    print(filtered_sorted[0])
+    
 
 
 
