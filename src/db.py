@@ -2,8 +2,9 @@ import sqlite3
 from ajefech_client import filter_santiago_presencial
 from datetime import date, datetime
 
+DB_PATH = "data/ajefech.db"
+
 def create_table():
-    DB_PATH = "data/ajefech.db"
 
     conn = sqlite3.connect(DB_PATH)
 
@@ -11,7 +12,7 @@ def create_table():
 
     create_table_query = """
     CREATE TABLE IF NOT EXISTS tournaments (
-    id PRIMARY KEY o UNIQUE, 
+    id TEXT PRIMARY KEY, 
     title TEXT, 
     city TEXT, 
     address TEXT, 
@@ -20,33 +21,86 @@ def create_table():
     is_online INTEGER , 
     is_santiago INTEGER,  
     is_suspended INTEGER,
-    scraped_at TIMESTAMP
+    scraped_at TIMESTAMP);
     """
     cursor.execute(create_table_query)
     conn.commit
     conn.close
     
+    filter_santiago_presencial(list)
 
-def upsert_tournaments(tournaments: list[dict]):
-    DB_PATH = "data/ajefech.db"
+"""Esta función me supero ligeramente: repasar"""
+def upsert_tournaments(tournaments: list[dict]) -> None:
+    insert_query = """
+    INSERT OR IGNORE INTO tournaments (
+        id, title, city, address,
+        start_date, start_date_iso,
+        is_online, is_santiago, is_suspended,
+        scraped_at
+    )
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+    """
+
+    scraped_at = datetime.now().isoformat(timespec="seconds")
+
+    rows = []
+    for t in tournaments:
+        # start_date_obj puede ser date o None
+        start_date_obj = t.get("start_date_obj")
+        start_date_iso = start_date_obj.isoformat() if start_date_obj is not None else None
+
+        row = (
+            t.get("id", ""),
+            t.get("title", ""),
+            t.get("city_clean", t.get("city", "")),
+            t.get("address_clean", t.get("address", "")),
+            t.get("start_date", ""),
+            start_date_iso,
+            int(bool(t.get("is_online"))),
+            int(bool(t.get("is_santiago"))),
+            int(bool(t.get("is_suspended"))),
+            scraped_at,
+        )
+        rows.append(row)
 
     conn = sqlite3.connect(DB_PATH)
-    cursor = conn.cursor()
+    try:
+        cursor = conn.cursor()
+        cursor.executemany(insert_query, rows)
+        conn.commit()
+    finally:
+        conn.close()
+        
+        
 
-    for t in filtered_sorted:
+def pasar_a_csv ():
+    return True  
 
-        insert_query = """
-        INSERT OR IGNORE INTO tournaments (id, tittle, city, address, 
-        start_date, start_date_iso, is_online, is_santiago, is_suspended, scraped_at) 
-        VALUES ()
-        """
-        int(t["is_santiago"]),
-        int(t["is_suspended"]),
-        int(t["is_online"]),
-        t["start_date_obj"].isoformat()
 
-    filtered_sorted = filter_santiago_presencial()
 
-def get_lastet (n = 10): 
-    return True
+
+def get_latest(n: int = 10):
+    """
+    Devuelve los próximos N torneos ordenados por start_date_iso (asc).
+    (Puedes cambiar el WHERE si quieres solo Santiago presencial.)
+    """
+    query = """
+    SELECT
+        id, title, city, address,
+        start_date, start_date_iso,
+        is_online, is_santiago, is_suspended,
+        scraped_at
+    FROM tournaments
+    WHERE start_date_iso IS NOT NULL
+    ORDER BY start_date_iso ASC
+    LIMIT ?;
+    """
+
+    conn = sqlite3.connect(DB_PATH)
+    try:
+        cursor = conn.cursor()
+        cursor.execute(query, (n,))
+        return cursor.fetchall()
+    finally:
+        conn.close()
 

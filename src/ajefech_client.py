@@ -160,15 +160,17 @@ tournaments = fetch_tournaments()
 
 norm_list = [normalize_tournament(t) for t in tournaments]
 
+""""""
 #Función de prueba
 def prueba_1(list):
     print(type(norm_list))
     print(type(norm_list[0]))
     return len(list)
+    
 
 
 #General el filtro de Santiago
-def filter_santiago_presencial (norm_list):
+def filter_santiago_presencial (list):
     
     filtered = []
 

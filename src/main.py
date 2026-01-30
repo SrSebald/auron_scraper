@@ -3,6 +3,9 @@ from ajefech_client import normalize_tournament
 from ajefech_client import normalize_text
 from ajefech_client import prueba_1
 from ajefech_client import filter_santiago_presencial
+from db import create_table
+from db import upsert_tournaments
+from db import get_latest
 
 if __name__ == "__main__":
 
@@ -67,7 +70,26 @@ if __name__ == "__main__":
 
     print(len(filtered_sorted))
 
+    print(type(filtered_sorted[0]))
+
     print(filtered_sorted[0])
+
+    create_table()
+
+    
+    
+
+    print(filtered_sorted[0].keys())
+
+    upsert_tournaments(filtered_sorted)
+
+    # 6) Verifica leyendo desde DB (si tienes get_latest)
+    print("\n✅ Insert completado. Mostrando próximos 10 desde SQLite:\n")
+    for row in get_latest(10):
+        print(row)
+
+
+
     
 
 
